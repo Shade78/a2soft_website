@@ -1,0 +1,279 @@
+/* Обнуление */
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;widows: 100%;font-size: 100%;line-height: 1;font-size: 14px;
+-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a::hover{text-decoration: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
+/*----------------------------------------*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_1 {
+    max-width: 100%;
+    margin: 20px 10px;
+}
+
+.menu_text li{
+    margin: 10px 5px;
+}
+
+.top_menu{
+    flex-grow: 1;
+    justify-content: center;
+
+}
+
+.hi__row{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+}
+
+.top_menu li{
+    display: inline-block;
+}
+
+.top_p{
+    font-size: 60px;
+    margin-top: 80px;
+    margin-left: 20px
+}
+
+.ticker_container{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    overflow: hidden;
+    min-width: 100%;
+}
+
+.ticker{
+    font-size: 100px;
+    line-height: 1.3;
+    font-family: sans-serif;
+    padding: 24px 0;
+    color: #000000;
+    white-space: nowrap;
+    animation: ticker 5.5s infinite linear;
+}
+
+ticker::after{
+    content: "Meta   Amazon   Apple   Netflix   Google";
+}
+
+@keyframes ticker{
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-20%)
+    }
+}
+
+.rabotaem{
+    color: gray;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.hardskills{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.time_material{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.gear{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.star{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.direction{
+    margin-top: 20px;
+    margin-left: -40px;
+    line-height: 10px;
+    display: flex;  
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.direction_text{
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.staff {
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.our_job{
+    margin-top: 20px;
+    margin-left: 40px;
+    line-height: 10px;
+    display: flex;  
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.we_provide{
+    line-height: 24px;
+}
+
+.list_result{
+    margin-top: 30px;
+    line-height: 20px;
+}
+
+.t_m{
+    display:inline-block;
+}
+
+.our_job_text{
+    line-height: 30px;
+    font-size: 35px;
+    flex-basis: 300px;
+}
+
+.process_text{
+    width: 12%;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.process_list{
+    line-height: 40px;
+}
+
+.advantages{
+    display: flex;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.advantages_word {
+    width: 12%;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.advantages_list{
+    line-height: 10px;
+    margin-left: -5px;
+}
+
+.text_with_icons_row1{
+    display: flex;
+    justify-content: space-between;    
+    padding: 20px 10px;
+    margin: 0px 10px;
+    flex: 0 1 33.333%;
+    line-height: 20px;
+}
+
+.text_with_icons_row2{
+    display: flex;
+    justify-content: space-between;    
+    padding: 20px 10px;
+    margin: 0px 10px;
+    flex: 0 1 33.333%;
+    line-height: 20px;
+}
+
+.container_2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item{
+    background-color: rgb(238, 236, 236);
+    width: 33%;
+    height: 90px;
+    margin: 30px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.number{
+    position: relative;
+    left: 82%;
+    bottom: 50%;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(30, 29, 29);
+}
+
+span{
+    font-weight: 800;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.content {
+    flex: 1 1 auto;
+}
+
+.footer {
+    color: white;
+    background-color: rgb(28, 27, 27);
+}
+
+.footer_row{
+    display: flex;
+    height: 170px;
+    justify-content: left;
+}
+
+.container_2{
+    margin: 10px 0 0 20px;
+}
+
+li{
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+
+.hi__row{
+    display: flex;
+}
+
+.hi_list{
+    display: inline-block;
+}
+
